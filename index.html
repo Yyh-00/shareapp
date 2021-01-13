@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="充电桩,充电终端,充电站,嘿充,新能源汽车充电桩,新能源汽车充电终端,电动汽车充电桩,电动汽车充电终端,充电桩网络平台,充电终端网络平台,充电站网络平台">
+    <meta name="description" content="嘿充主要从事新能源汽车充电网的建设、运营及互联网的增值服务,提供有手机专区、充电网络、互联互通平台、SaaS平台等功能。依靠国际领先的汽车群智能充电技术和系统，创新电动汽车充电商业模式，致力于建设并运营全国最大的汽车充电网。">
+    <link rel="shortcut icon" href=" favicon.ico" />
+    <title>嘿充-汽车充电，你的首选</title>
+    <link rel="stylesheet" href="css/base.css">
+    <!-- <link rel="stylesheet" href="css/style738.css" media="screen and （max-width：738px）"> -->
+    <link rel="stylesheet" href="css/style739.css" media="screen and (min-width:739px)">
+    <link rel="stylesheet" href="css/style738.css" media="screen and (max-width:738px)">
+</head>
+
+<body>
+    <div class="fix">
+        <div class="w">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="name">嘿充</div>
+            <div>浙江中创天成科技有限公司</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box1">
+            <h1>下载客户端，全面掌控爱车充电</h1>
+            <h1>小程序更轻便</h1>
+            <h1>微信扫一扫就能充电</h1>
+            <img src="images/img1.png" alt="">
+        </div>
+        <div class="box2">
+            <h1>扫一扫就能充电</h1>
+            <h2>每一个终端都有一个二维码，对准扫一扫，点击扫码充</h2>
+            <h2>电按钮，即可充电，充电就是那么简单</h2>
+            <img src="images/img2.png" alt="">
+
+        </div>
+        <div class="box3">
+            <h1>带您去最近的电站充电</h1>
+            <h2>拥有完美导航功能，自动带您去最近的充电站充电，定</h2>
+            <h2>为精准，不走冤枉路，无需排队等候，省时省心。</h2>
+            <img src="images/img3.png" alt="">
+        </div>
+        <div class="box4">
+            <ul>
+                <li>
+                    <a href="https://apps.apple.com/cn/app/%E5%98%BF%E5%85%85/id1521455142">
+                        <img src="images/icon1.png" alt="">
+                        <p>ios客户端</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.zctc.wl.chargingpile&from=singlemessage">
+                        <img src="images/icon2.png" alt="">
+                        <p>Android客户端</p>
+                    </a>
+                </li>
+                <li class="wx">
+                    <div class="front">
+                        <img src="images/icon3.png" alt="">
+                        <p>小程序</p>
+                        <p class="yy">请到微信搜索"嘿充”小程序</p>
+                    </div>
+                    <div class="back">
+                        <p>请到微信搜索"嘿充”小程序</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="x">
+            <p>Copyright © 2015 - 2020 浙江中创天成科技有限公司</p>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            //判断用户手机类型
+            var u = navigator.userAgent,
+                app = navigator.appVersion;
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //安卓终端
+            var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            if (isAndroid) { //判断为安卓手机
+                location.href = "https://a.app.qq.com/o/simple.jsp?pkgname=com.zctc.wl.chargingpile&from=singlemessage";
+            }
+            if (isIOS) { //判断为苹果手机
+                location.href = "https://apps.apple.com/cn/app/%E5%98%BF%E5%85%85/id1521455142";
+            }
+        }
+    </script>
+</body>
+
+</html>

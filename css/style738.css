@@ -1,0 +1,188 @@
+.fix {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.w {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 60px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.w div {
+    display: inline-block;
+}
+
+.w .logo {
+    width: 30px;
+    height: 30px;
+}
+
+.w .logo img {
+    width: 100%;
+    margin-top: -5px;
+}
+
+.w .name {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.w div:nth-child(3) {
+    float: right;
+    color: #fff;
+    font-size: 12px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.box1 img {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.box2 {
+    text-align: center;
+    height: 550px;
+    background-color: #cdcfcd;
+    overflow: hidden;
+}
+
+.box2 h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box2 img {
+    width: 40%;
+    margin-top: 30px;
+}
+
+.box3 {
+    text-align: center;
+    margin-top: 40px;
+    height: 560px;
+}
+
+.box3 h1 {
+    margin-bottom: 20px;
+}
+
+.box3 img {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.box4 {
+    height: 500px;
+    background-color: #cdcfcd;
+    text-align: center;
+}
+
+ul {
+    padding: 75px 0 0 80px;
+}
+
+ul li {
+    width: 70%;
+    height: 100px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    perspective: 500px;
+}
+
+ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+}
+
+ul li p {
+    margin: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+ul li:nth-child(1) {
+    background-color: #000;
+}
+
+ul li:nth-child(1) img {
+    width: 25px;
+}
+
+ul li:nth-child(2) {
+    background-color: #00a8d8;
+}
+
+ul li:nth-child(2) img {
+    width: 27px;
+}
+
+ul li:nth-child(3) {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all .4s;
+    overflow: hidden;
+}
+
+ul li:nth-child(3):hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+ul li:nth-child(3) .front,
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #089801;
+}
+
+ul li:nth-child(3) .front {
+    padding-top: 10px;
+    z-index: 1;
+}
+
+ul li:nth-child(3) .front img {
+    width: 30px;
+}
+
+ul li:nth-child(3) .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    padding-top: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, .8);
+}
+
+.x {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 100px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+}
